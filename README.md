@@ -1,8 +1,51 @@
 # C++ Project Skeleton
 
-1. Find and replace `PROJECT_NAME` with the name of your project
-2. `mkdir build`
-4. `cd build`
-3. `cmake ..`
-4. `cmake --build .`
-6. `./bin/{PROJECT_NAME}`
+This is a minimal, build-ready C++ project scaffold using CMake. It includes a clean directory layout and a built-in CLI tool (`gold`) to streamline setup, building, and execution.
+
+---
+
+## 🚀 Quick Start (Recommended)
+
+Use the included `gold` CLI to set up, build, and run your project.
+
+1. Run setup:
+   ```bash
+   gold setup
+   ```
+   This will:
+
+   - Prompt for your project name
+   - Replace `PROJECT_NAME` in all `CMakeLists.txt` files
+   - Build the project
+   - Set up global access to `gold` via `~/.local/bin`
+
+2. Run your project:
+   ```bash
+   gold run
+   ```
+   This will rebuild the project and run your compiled binary.
+
+For more info, see the `gold` tool README:  
+https://github.com/JamieWells1/cpp_skeleton/blob/main/goldpkg/README.md
+
+---
+
+## 🔧 Manual Build (Optional)
+
+If you prefer to build manually:
+
+1. Replace all instances of `PROJECT_NAME` with your actual project name.
+2. Create and enter a build directory:
+   ```bash
+   mkdir build
+   cd build
+   ```
+3. Configure and build:
+   ```bash
+   cmake ..
+   cmake --build .
+   ```
+4. Run your binary:
+   ```bash
+   ./bin/{PROJECT_NAME}
+   ```

@@ -23,9 +23,9 @@ It simplifies project setup, enforces clean structure, and supports fully portab
 
 Run the following after cloning:
 
-'''bash
+```bash
 gold setup
-'''
+```
 
 This will:
 
@@ -40,9 +40,9 @@ This will:
 
 Once setup is complete, just:
 
-'''bash
+```bash
 gold run
-'''
+```
 
 This rebuilds the project and executes the compiled binary.
 
@@ -50,7 +50,7 @@ This rebuilds the project and executes the compiled binary.
 
 ## 📁 Directory Structure
 
-'''text
+```text
 cpp_skeleton/
 ├── goldpkg/
 │   ├── gold        # Main CLI script
@@ -59,7 +59,7 @@ cpp_skeleton/
 ├── src/            # Your C++ sources
 ├── CMakeLists.txt  # Template with 'PROJECT_NAME'
 └── gold.cfg        # Auto-generated config
-'''
+```
 
 ---
 
