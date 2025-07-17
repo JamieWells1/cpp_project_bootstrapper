@@ -1,3 +1,3 @@
-add_executable(PROJECT_NAME main.cpp)
+add_executable(abc123 main.cpp)
 
-target_include_directories(PROJECT_NAME PRIVATE ${PROJECT_SOURCE_DIR}/include)
+target_include_directories(abc123 PRIVATE ${PROJECT_SOURCE_DIR}/include)
