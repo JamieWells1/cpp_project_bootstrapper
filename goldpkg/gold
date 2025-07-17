@@ -37,9 +37,8 @@ def save_config(cfg):
         json.dump(cfg, f, indent=2)
 
 
-"""
-def replace_project_name_in_cmake(project_name):
-    for root, _, files in os.walk(PROJECT_ROOT):
+def replace_project_name_in_cmake(project_name, project_root):
+    for root, _, files in os.walk(project_root):
         for fname in files:
             if fname == "CMakeLists.txt":
                 path = os.path.join(root, fname)
@@ -49,38 +48,6 @@ def replace_project_name_in_cmake(project_name):
                     updated = contents.replace("PROJECT_NAME", project_name)
                     with open(path, "w") as f:
                         f.write(updated)
-                        """
-
-
-def replace_project_name_in_cmake(project_name, project_root):
-    print(f"\n🔧 Starting PROJECT_NAME replacement with: '{project_name}'")
-    print(f"📁 Scanning from root: {PROJECT_ROOT}\n")
-
-    for root, _, files in os.walk(project_root):
-        for fname in files:
-            if fname == "CMakeLists.txt":
-                path = os.path.join(root, fname)
-                print(f"📝 Found CMakeLists.txt: {path}")
-
-                try:
-                    with open(path, "r") as f:
-                        contents = f.read()
-                except Exception as e:
-                    print(f"❌ Failed to read {path}: {e}")
-                    continue
-
-                if "PROJECT_NAME" in contents:
-                    print(f"🔄 Found 'PROJECT_NAME' placeholder in: {path}")
-                    updated = contents.replace("PROJECT_NAME", project_name)
-
-                    try:
-                        with open(path, "w") as f:
-                            f.write(updated)
-                        print(f"✅ Replaced and wrote new project name in: {path}")
-                    except Exception as e:
-                        print(f"❌ Failed to write to {path}: {e}")
-                else:
-                    print(f"⚠️ No 'PROJECT_NAME' found in: {path}")
 
 
 def build():
