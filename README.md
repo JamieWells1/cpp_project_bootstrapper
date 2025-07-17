@@ -4,9 +4,20 @@ This is a minimal, build-ready C++ project scaffold using CMake. It includes a c
 
 ---
 
+## Prerequisites
+
+To use this project (via `gold` or manual build), you’ll need:
+
+- **CMake**: must be installed and available in your PATH
+- **Python 3**: required to run the `gold` CLI tool
+
+---
+
 ## 🚀 Quick Start (Recommended)
 
 Use the included `gold` CLI to set up, build, and run your project.
+
+⚠️ This is a macOS/Linux only tool. It will not work on Windows.
 
 1. Run setup:
    ```bash
@@ -30,7 +41,7 @@ https://github.com/JamieWells1/cpp_skeleton/blob/main/goldpkg/README.md
 
 ---
 
-## 🔧 Manual Build (Optional)
+## Manual Build (Optional)
 
 If you prefer to build manually:
 
