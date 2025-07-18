@@ -1,5 +1,4 @@
 #!/bin/bash
-# Run this after cloning the repo
 
 SCRIPT="./gold"
 if [ ! -x "$SCRIPT" ]; then
