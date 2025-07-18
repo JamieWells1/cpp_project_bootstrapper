@@ -60,11 +60,3 @@ cpp_skeleton/
 ├── src/            # Your C++ sources
 ├── CMakeLists.txt  # Template with 'PROJECT_NAME'
 ```
-
----
-
-## Notes
-
-- All builds are local to `build/`
-- All config is stored in `gold.cfg`
-- If you ever break it, change `setup_complete` in `gold.cfg` to `false`, and `project_name` to `PROJECT_NAME`. Then, rerun `gold setup`
