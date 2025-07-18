@@ -1,4 +1,4 @@
-# C++ Project Skeleton
+# C++ Project Bootstrapper
 
 This is a minimal, build-ready C++ project scaffold using CMake. It includes a clean directory layout and a built-in CLI tool (`gold`) to streamline setup, building, and execution.
 
