@@ -5,7 +5,7 @@ import sys
 import subprocess
 import json
 
-CONFIG_FILE = "gold.cfg"
+CONFIG_FILE = "goldpkg/gold.cfg"
 BUILD_DIR = "build"
 
 GREEN = "\033[92m"
