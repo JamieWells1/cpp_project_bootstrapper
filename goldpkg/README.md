@@ -55,10 +55,10 @@ cpp_skeleton/
 ├── goldpkg/
 │   ├── gold        # Main CLI script
 │   └── setup.sh    # One-time installer
+│   └── gold.cfg    # JSON config log
 ├── build/          # Auto-created build directory
 ├── src/            # Your C++ sources
 ├── CMakeLists.txt  # Template with 'PROJECT_NAME'
-└── gold.cfg        # Auto-generated config
 ```
 
 ---
@@ -67,4 +67,4 @@ cpp_skeleton/
 
 - All builds are local to `build/`
 - All config is stored in `gold.cfg`
-- If you ever break it, change `setup_complete` in `gold.cfg` to `false` and rerun `gold setup`
+- If you ever break it, change `setup_complete` in `gold.cfg` to `false`, and `project_name` to `PROJECT_NAME`. Then, rerun `gold setup`
