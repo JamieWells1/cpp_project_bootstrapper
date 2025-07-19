@@ -9,6 +9,7 @@ This is a minimal, build-ready C++ project scaffold using CMake. It includes a c
 To use this project (via `gold` or manual build), you’ll need:
 
 - **CMake**: must be installed and available in your PATH
+- **GTest**: must be installed in order to run tests
 - **Python 3**: required to run the `gold` CLI tool
 
 ---
