@@ -19,22 +19,20 @@ Use the included `gold` CLI to set up, build, and run your project.
 
 ⚠️ This is a macOS/Linux only tool. It will not work on Windows.
 
-1. Run setup:
+1. Run install:
+   ```bash
+   ./goldpkg/install.sh
+   ```
+
+2. Run project setup:
    ```bash
    gold setup
    ```
-   This will:
 
-   - Prompt for your project name
-   - Replace `PROJECT_NAME` in all `CMakeLists.txt` files
-   - Build the project
-   - Set up global access to `gold` via `~/.local/bin`
-
-2. Run your project:
+3. Run your project:
    ```bash
    gold run
    ```
-   This will rebuild the project and run your compiled binary.
 
 For more info, see the `gold` tool README:  
 https://github.com/JamieWells1/cpp_skeleton/blob/main/goldpkg/README.md
